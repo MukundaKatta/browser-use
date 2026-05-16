@@ -302,3 +302,11 @@ For production use cases, use our [Browser Use Cloud API](https://cloud.browser-
 </div>
 
 <div align="center"> Made with ❤️ in Zurich and San Francisco </div>
+## Repository Health
+This repository includes a dependency-free health check for core documentation, metadata, and CI wiring. Run it locally before publishing changes:
+
+```sh
+python3 scripts/check_repository_health.py
+```
+
+The same check runs in GitHub Actions on pushes and pull requests.
